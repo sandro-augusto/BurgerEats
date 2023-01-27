@@ -1,0 +1,38 @@
+cadastro:
+  login:
+    type: 'css'
+    value: 'svg[fill=none]'
+  name:
+    type: 'css'
+    value: 'input[name=name]'
+  cpf:
+    type: 'css'
+    value: 'input[name=cpf]'
+  email:
+    type: 'css'
+    value: 'input[name=email]'
+  whatsapp:
+    type: 'css'
+    value: 'input[name=whatsapp]'
+  cep:
+    type: 'css'
+    value: 'input[name=postalcode]'
+  numero_casa:
+    type: 'css'
+    value: 'input[placeholder=Número]'
+  complemento:
+    type: 'css'
+    value: 'input[name=address-details]'
+  metodo_moto:
+    type: 'css'
+    value: 'img[alt=Moto]'
+  upload:
+    type: 'css'
+    value: 'div[class=dropzone]'
+  btn_cadastrar:
+    type: 'css'
+    value: 'button[class=button-success]'
+  btn_cep:
+    type: 'css'
+    value: 'input[type=button]'
+  
