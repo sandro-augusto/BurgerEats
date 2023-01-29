@@ -24,11 +24,11 @@
   
   Quando('preencher os campos necessários para o cadastro do {string}') do |metodo_entrega|
     @cadastro = CadastroPage.new
-    @cadastro.cadastro_uber_eats
+    @cadastro.cadastro_uber_eats(metodo_entrega)
   end
   
   Então('verifico a mensagem de sucesso') do
     @cadastro = CadastroPage.new
-    expect(@cadastro.valida_cadastro(metodo_entrega)).to be_truthy
+    expect(@cadastro.valida_cadastro).to be_truthy
   end
   

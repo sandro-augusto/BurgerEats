@@ -26,6 +26,12 @@ cadastro:
   metodo_moto:
     type: 'css'
     value: 'img[alt=Moto]'
+  metodo_bicicleta:
+    type: 'css'
+    value: 'img[alt=Bicicleta]'
+  metodo_van_carro:
+    type: 'xpath'
+    value: '/html/body/div/div/form/fieldset[3]/ul/li[3]'
   upload:
     type: 'css'
     value: 'div[class=dropzone]'
