@@ -19,7 +19,7 @@ class CadastroPage
         text_exists?('Voltar para home')
     end
 
-    def cadastro_uber_eats
+    def cadastro_uber_eats_guto
         
     end
     
