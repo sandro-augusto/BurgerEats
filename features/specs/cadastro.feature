@@ -14,3 +14,4 @@ Então é direcionado para pagina de cadastro
 @validacadastro
 Esquema do Cenário: 
 
+oii gutoooooo
