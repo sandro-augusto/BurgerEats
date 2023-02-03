@@ -55,3 +55,6 @@ class CadastroPage
         text_exists?('Recebemos os seus dados. Fique de olho na sua caixa de email, pois e em breve retornamos o contato.')
     end
 end 
+
+ def teste
+ end
