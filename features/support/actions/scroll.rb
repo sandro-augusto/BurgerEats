@@ -3,8 +3,8 @@
 def scroll_to(el)
     upload = $driver.find_element(:"#{el['type']}", el['value'])
     $driver.action
-           .scroll_to(upload)
-           .perform
+    .scroll_to(upload)
+    .perform
 end
 
 def move_to(el)

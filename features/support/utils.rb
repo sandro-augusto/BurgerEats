@@ -2,7 +2,6 @@
 
 require 'yaml'
 require 'faker'
-require 'cpf_faker'
 
 
 def get_element(screen)
@@ -29,8 +28,9 @@ def faker_cpf
 end
 
 def faker_cep 
-    Faker::Address.postcode
+    Faker::Number.number(digits: 8)
 end
+
 
 def upload
     $driver.find_element(:css, 'input[type=file]').send_keys("C:/Users/sandr/OneDrive/Área de Trabalho/BugerEats/imagem/CNH.png")

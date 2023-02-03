@@ -1,5 +1,4 @@
 
-
 def wait
     Selenium::WebDriver::Wait.new :timeout => 10
 end

@@ -13,13 +13,18 @@ class CadastroPage
     def home
         click(@map['login'])
         sleep 1
+        set(@map['cep'], faker_cep)
+        press_tab
+        press_enter
+        sleep 10
     end
 
     def valida_page_cadastro
         text_exists?('Voltar para home')
     end
 
-    def cadastro_uber_eats_guto
+    def cadastro_uber_eats
+        
         
     end
     
