@@ -33,5 +33,13 @@ end
 
 
 def upload
-    $driver.find_element(:css, 'input[type=file]').send_keys("C:/Users/sandr/OneDrive/Área de Trabalho/BugerEats/imagem/CNH.png")
+    $driver.find_element(:css, 'input[type=file]').send_keys("C:/BurgerEats/imagem/hab1.png.jfif")
+end
+
+def upload_1
+    $driver.find_element(:css, 'input[type=file]').send_keys("C:/BurgerEats/imagem/hab2.png.jfif")
+end
+
+def upload_2
+    $driver.find_element(:css, 'input[type=file]').send_keys("C:/BurgerEats/imagem/hab3.png.jfif")
 end

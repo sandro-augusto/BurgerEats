@@ -12,6 +12,13 @@ Então é direcionado para pagina de cadastro
 
 
 @validacadastro
-Esquema do Cenário: 
+Esquema do Cenário: Criar cadastro para moto,bicicleta,van/carro
+Dado que estou na pagina de cadastro
+Quando é preenchido os dados com "<tipos>" 
+Então é verificado a mensagem de sucesso
 
-oii gutoooooo
+Exemplos:
+|tipos    |
+# |moto     |
+# |bicicleta|
+|van_carro|
