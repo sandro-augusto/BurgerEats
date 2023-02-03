@@ -15,19 +15,18 @@
     expect(@cadastro.valida_page_cadastro).to be_truthy
   end
 
-  Dado('que esteja na pagina de cadastro') do
+  Dado('que estou na pagina de cadastro') do
     @cadastro = CadastroPage.new
     @cadastro.visit_page
     @cadastro.home
-    expect(@cadastro.valida_page_cadastro).to be_truthy
   end
   
-  Quando('preencher os campos necessários para o cadastro do {string}') do |metodo_entrega|
+  Quando('é preenchido os dados com {string}') do |tipos|
     @cadastro = CadastroPage.new
-    @cadastro.cadastro_uber_eats(metodo_entrega)
+    @cadastro.cadastro_uber_eats(tipos)
   end
   
-  Então('verifico a mensagem de sucesso') do
+  Então('é verificado a mensagem de sucesso') do
     @cadastro = CadastroPage.new
     expect(@cadastro.valida_cadastro).to be_truthy
   end

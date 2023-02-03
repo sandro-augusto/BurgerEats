@@ -1,5 +1,5 @@
 cadastro:
-  login:
+  cadastro_entrega:
     type: 'css'
     value: 'svg[fill=none]'
   name:
@@ -17,6 +17,9 @@ cadastro:
   cep:
     type: 'css'
     value: 'input[name=postalcode]'
+  btn_cep:
+    type: 'css'
+    value: 'input[type=button]'
   numero_casa:
     type: 'css'
     value: 'input[placeholder=Número]'
@@ -31,14 +34,10 @@ cadastro:
     value: 'img[alt=Bicicleta]'
   metodo_van_carro:
     type: 'xpath'
-    value: '/html/body/div/div/form/fieldset[3]/ul/li[3]'
-  upload:
-    type: 'css'
-    value: 'div[class=dropzone]'
+    value: '/html/body/div[1]/div/form/fieldset[3]/ul/li[3]'
   btn_cadastrar:
     type: 'css'
     value: 'button[class=button-success]'
-  btn_cep:
-    type: 'css'
-    value: 'input[type=button]'
+  
+  
   
