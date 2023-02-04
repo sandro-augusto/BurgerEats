@@ -34,10 +34,11 @@ cadastro:
     value: 'img[alt=Bicicleta]'
   metodo_van_carro:
     type: 'xpath'
-    value: '/html/body/div[1]/div/form/fieldset[3]/ul/li[3]'
+    value: '//span[text()="Van/Carro"]'
+  upload:
+    type: 'css'
+    value: 'div[class="dropzone"]'
   btn_cadastrar:
     type: 'css'
     value: 'button[class=button-success]'
-  
-  
   

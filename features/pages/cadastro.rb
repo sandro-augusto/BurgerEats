@@ -20,27 +20,31 @@ class CadastroPage
     end
 
     def cadastro_uber_eats tipos
-        set(@map['name'], "João Otávio")
-        set(@map['cpf'], "19449642079")
-        set(@map['email'], "Joaotavio@teste.com.br")
-        set(@map['whatsapp'], "998256906")
-        set(@map['cep'], "54759265")
+        set(@map['name'], faker_name)
+        set(@map['cpf'], faker_cpf)
+        set(@map['email'], faker_email)
+        set(@map['whatsapp'], faker_number)
+        set(@map['cep'], faker_cep)
         click(@map['btn_cep'])
-        set(@map['numero_casa'], "279")
-        set(@map['complemento'], "Casa A")
+        set(@map['numero_casa'], faker_numero)
+        set(@map['complemento'], faker_complemento)
+        sleep 2
         case tipos
         when "moto"
           click(@map['metodo_moto']) 
-          sleep 3 
+          scroll_to(@map['upload'])
+          sleep 2
           upload   
 
         when "bicicleta"
-         click(@map['metodo_bicicleta'])   
+         click(@map['metodo_bicicleta'])
+         scroll_to(@map['upload']) 
          sleep 2
          upload_1
 
-        when "van/carro"
-        click(@map['metodo_van_carro']) 
+        when "van_carro"
+        click(@map['metodo_van_carro'])
+        scroll_to(@map['upload'])
         sleep 2  
         upload_2   
         else

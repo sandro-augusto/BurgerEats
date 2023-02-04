@@ -19,6 +19,6 @@ Então é verificado a mensagem de sucesso
 
 Exemplos:
 |tipos    |
-# |moto     |
-# |bicicleta|
+|moto     |
+|bicicleta|
 |van_carro|
