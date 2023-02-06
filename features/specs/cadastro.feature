@@ -20,11 +20,6 @@ Então é verificado a mensagem de sucesso
 Exemplos:
 |tipos    |
 |moto     |
-<<<<<<< HEAD
-|bicicleta|
-|van_carro|
-
-=======
 # |bicicleta|
 # |van_carro|
 
@@ -39,6 +34,5 @@ Exemplos:
 # |nome|É necessário informar o nome|
 # |cpf|É necessário informar o CPF|
 # |email|É necessário informar o email|
-# |cep|Informe um CEP inválido| 
->>>>>>> 0a55518962ab68d9908d94b08148245c361d1393
+# |cep|Informe um CEP inválido|
 
