@@ -24,11 +24,11 @@ class CadastroPage
         set(@map['cpf'], faker_cpf)
         set(@map['email'], faker_email)
         set(@map['whatsapp'], faker_number)
-        set(@map['cep'], faker_cep)
+        # set(@map['cep'], faker_cep)
         click(@map['btn_cep'])
-        set(@map['numero_casa'], faker_numero)
-        set(@map['complemento'], faker_complemento)
-        sleep 2
+        # set(@map['numero_casa'], faker_numero)
+        # set(@map['complemento'], faker_complemento)
+        sleep 5
         case tipos
         when "moto"
           click(@map['metodo_moto']) 
@@ -51,10 +51,15 @@ class CadastroPage
             puts "Favor informar a opção correta" 
         end
         click(@map['btn_cadastrar'])
+        sleep 12
     end
         
     def valida_cadastro
         sleep 2
         text_exists?('Recebemos os seus dados. Fique de olho na sua caixa de email, pois e em breve retornamos o contato.')
     end
+    
+    # def method_name
+        
+    # end
 end 
