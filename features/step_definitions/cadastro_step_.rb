@@ -30,4 +30,11 @@
     @cadastro = CadastroPage.new
     expect(@cadastro.valida_cadastro).to be_truthy
   end
+
+  # Quando('é preenchido as informações com {string}') do |dados|
+  # end
+  
+  # Então('é verificado a mensagem de alerta {string}') do |valor|
+  # end
+
   
