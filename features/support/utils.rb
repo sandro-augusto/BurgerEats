@@ -41,7 +41,6 @@ def faker_complemento
 end
 
 def upload
-<<<<<<< HEAD
     $driver.find_element(:css, 'input[type=file]').send_keys("C:/ruby/BurgerEats/imagem/hab1.png.jfif")
 end
 
@@ -51,8 +50,6 @@ end
 
 def upload_2
     $driver.find_element(:css, 'input[type=file]').send_keys("C:/ruby/BurgerEats/imagem/hab1.png.jfif")
-=======
-    $driver.find_element(:css, 'input[type=file]').send_keys("C:/BurgerEats/imagem/hab1.png.jfif")
 end
 
 def upload_1
@@ -61,5 +58,4 @@ end
 
 def upload_2
     $driver.find_element(:css, 'input[type=file]').send_keys("C:/BurgerEats/imagem/hab3.png.jfif")
->>>>>>> 0a55518962ab68d9908d94b08148245c361d1393
 end
