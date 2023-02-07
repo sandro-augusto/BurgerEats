@@ -41,4 +41,25 @@ cadastro:
   btn_cadastrar:
     type: 'css'
     value: 'button[class=button-success]'
+  valida_nome:
+    type: 'xpath'
+    value: '//div//span[text()="É necessário informar o nome"]'
+  valida_cpf:
+    type: 'xpath'
+    value: '//div//span[text()="É necessário informar o CPF"]'
+  valida_email:
+    type: 'xpath'
+    value: '//div//span[text()="É necessário informar o email"]'
+  valida_cep:
+    type: 'xpath'
+    value: '//div//span[text()="É necessário informar o CEP"]'
+  valida_number:
+    type: 'xpath'
+    value: '//div//span[text()="É necessário informar o número do endereço"]'
+  valida_metodo_entrega:
+    type: 'xpath'
+    value: '//fieldset//span[text()="Selecione o método de entrega"]'
+  valida_foto_cnh:
+    type: 'xpath'
+    value: //div//span[text()="Adicione uma foto da sua CNH"]
   

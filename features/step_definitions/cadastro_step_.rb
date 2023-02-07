@@ -31,10 +31,20 @@
     expect(@cadastro.valida_cadastro).to be_truthy
   end
 
-  # Quando('é preenchido as informações com {string}') do |dados|
-  # end
-  
-  # Então('é verificado a mensagem de alerta {string}') do |valor|
-  # end
 
+
+  Quando('é preenchido as informações com {string}') do |dados|
+    @cadastro = CadastroPage.new
+    @cadastro.teste_cadastro(dados)
+  end
+  
+  Então('é verificado a mensagem de alerta {string}') do |valor|
+    @cadastro = CadastroPage.new
+    expect(@cadastro.valida_teste(valor)).to be_truthy
+  end
+
+  Então('é verificado a mensagem de alerta de acordo com {string} e {string}') do |dados, valor|
+    @cadastro = CadastroPage.new
+    expect(@cadastro.valida_teste(dados, valor)).to be_truthy
+  end
   

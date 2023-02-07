@@ -23,16 +23,20 @@ Exemplos:
 # |bicicleta|
 # |van_carro|
 
-# @testes
-# Esquema do Cenário: Testes no cadastro 
-# Dado que estou na pagina de cadastro
-# Quando é preenchido as informações com "<dados>" 
-# Então é verificado a mensagem de alerta "<valor>"
+@valida
+Esquema do Cenário: Testes no cadastro 
+Dado que estou na pagina de cadastro
+Quando é preenchido as informações com "<dados>" 
+Então é verificado a mensagem de alerta de acordo com "<dados>" e "<valor>"
 
-# Exemplos:
-# |dados|valor|
-# |nome|É necessário informar o nome|
-# |cpf|É necessário informar o CPF|
-# |email|É necessário informar o email|
-# |cep|Informe um CEP inválido|
+Exemplos:
+|dados|valor|
+# |nome            |É necessário informar o nome|
+# |cpf             |É necessário informar o CPF|
+# |email           |É necessário informar o email|
+# |cep             |É necessário informar o CEP|
+# |number          |É necessário informar o número do endereço|
+# |metodo_entrega  |Selecione o método de entrega|
+# |foto_cnh        |Adicione uma foto da sua CNH|
+|verificar_tudo  ||
 
